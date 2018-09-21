@@ -1,0 +1,128 @@
+body {
+    background: url(../img/bodyfone.png);
+}
+
+.container {
+    margin: 0 auto;
+    width: 80%;
+}
+
+.clearfix :after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+/*HEADER*/
+
+.header {
+    height: 436px;
+    background-color: white;
+}
+
+.logo {
+    float: left;
+}
+
+.contacts {
+    margin: 10px 30px;
+    float: right;
+    font-family: sans-serif;
+    color: #2AACC3;
+}
+
+.countries {
+    margin: 5px 30px;
+    clear: right;
+    float: right;
+}
+
+.flag {
+    display: inline-flex;
+}
+
+.flag li {
+    margin-right: 15px;
+}
+
+.flag li img {
+    display: block;
+    margin: auto;
+}
+
+.flag li p {
+    font-size: 11px;
+    font-family: sans-serif;
+    text-decoration: underline;
+    text-align: center;
+    color: #2AACC3;
+}
+
+.main_img {
+    margin-top: 1px;
+    margin-bottom: -3px;
+}
+
+.main_img img {
+    width: 100%;
+    border-top: 2px solid #138AA7;
+    border-bottom: 2px solid #138AA7;
+}
+
+/*drop-down menu*/
+
+.div_main_menu {
+    height: 25px;
+    background-color: black;
+}
+
+/* .alignes {
+    padding-top: 3px;
+    display: flex;
+} */
+
+.ul_main_menu {
+    padding-top: 3px;
+    margin: auto;
+    display: inline-flex;
+}
+
+.li_main_menu p {
+    margin: 0 35px;
+    color: white;
+    position: relative;
+}
+
+.li_main_menu :hover {
+    background-color: white;
+}
+
+/* .main_menu li :hover {
+    background: white;
+}
+
+.submenu {
+    background-color: black;
+    display: none;
+    position: absolute;
+}
+
+.submenu li {
+    display: block;
+}
+
+.main_menu li :hover > ul.submenu {
+    display: block;
+} */
+
+/*end drop-down menu*/
+
+/*SIDEBAR*/
+
+
+
+/*NEWS*/
+
+
+
+/*CONTENT*/
