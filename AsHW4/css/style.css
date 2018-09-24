@@ -16,7 +16,7 @@ body {
 /*HEADER*/
 
 .header {
-    height: 436px;
+    height: 800px;
     background-color: white;
 }
 
@@ -76,44 +76,44 @@ body {
     background-color: black;
 }
 
-/* .alignes {
-    padding-top: 3px;
-    display: flex;
-} */
-
 .ul_main_menu {
     padding-top: 3px;
-    margin: auto;
-    display: inline-flex;
 }
 
-.li_main_menu p {
-    margin: 0 35px;
-    color: white;
+.li_main_menu {
+    float: left;
     position: relative;
 }
 
-.li_main_menu :hover {
-    background-color: white;
-}
-
-/* .main_menu li :hover {
-    background: white;
+.li_main_menu>p {
+    margin: 0 35px;
+    color: white;
 }
 
 .submenu {
-    background-color: black;
     display: none;
+    background-color: black;
     position: absolute;
+    left: 40px;
+    top: 20px;
 }
 
-.submenu li {
+.submenu li p {
+    color: white;
+    margin: 10px;
+}
+
+.ul_main_menu>li:hover ul.submenu {
     display: block;
 }
 
-.main_menu li :hover > ul.submenu {
-    display: block;
-} */
+.li_main_menu p:hover {
+    height: 17px;
+}
+
+.submenu li p:hover {
+    text-decoration: underline;
+}
 
 /*end drop-down menu*/
 
