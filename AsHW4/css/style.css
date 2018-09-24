@@ -37,6 +37,8 @@ body {
     float: right;
 }
 
+/*flag_link*/
+
 .flag {
     display: inline-flex;
 }
@@ -50,7 +52,8 @@ body {
     margin: auto;
 }
 
-.flag li p {
+.flag li a {
+    display: block;
     font-size: 11px;
     font-family: sans-serif;
     text-decoration: underline;
@@ -71,13 +74,10 @@ body {
 
 /*drop-down menu*/
 
-.div_main_menu {
-    height: 25px;
-    background-color: black;
-}
-
 .ul_main_menu {
     padding-top: 3px;
+    background-color: black;
+    height: 25px;
 }
 
 .li_main_menu {
