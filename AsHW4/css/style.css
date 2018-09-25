@@ -5,6 +5,8 @@ body {
 .container {
     margin: 0 auto;
     width: 80%;
+    background-color: white;
+    box-shadow: 0px 0px 10px #000;
 }
 
 .clearfix :after {
@@ -16,7 +18,7 @@ body {
 /*HEADER*/
 
 .header {
-    height: 800px;
+    height: 439px;
     background-color: white;
 }
 
@@ -117,12 +119,73 @@ body {
 
 /*end drop-down menu*/
 
+/* WRAPPER */
+
+.wrapper {
+    overflow: hidden;
+    min-height: 500px;
+}
+
 /*SIDEBAR*/
 
+.sidebar {
+    box-sizing: border-box;
+    float: left;
+    width: 25%;
+    padding: 15px;
+    border-right: 2px solid #c7cacf;
+    background-color: #edeef0;
+    margin-bottom: -20000px;
+    padding-bottom: 20000px;
+}
 
+.sidebar h1 {
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 10px;
+    font-family: sans-serif;
+}
 
 /*NEWS*/
 
+.news {
+    box-sizing: border-box;
+    float: left;
+    width: 25%;
+    padding: 15px;
+    border-left: 2px solid #c7cacf;
+    background-color: #edeef0;
+    margin-bottom: -20000px;
+    padding-bottom: 20000px;
+}
 
+.news h1 {
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 10px;
+    font-family: sans-serif;
+}
 
 /*CONTENT*/
+
+.content {
+box-sizing: border-box;
+float: left;
+width: 50%;
+min-height: 1000px;
+padding: 15px;
+background-color: white;
+margin-bottom: -20000px;
+padding-bottom: 20000px;
+}
+
+/* FOOTER */
+
+.footer p {
+    text-align: center;
+    padding-top: 5px;
+    height: 25px;
+    color: white;
+}
