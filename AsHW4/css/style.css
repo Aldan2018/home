@@ -77,18 +77,20 @@ body {
 /*drop-down menu*/
 
 .ul_main_menu {
+    display: flex;
+    justify-content: space-around;
     padding-top: 3px;
     background-color: black;
     height: 25px;
 }
 
 .li_main_menu {
-    float: left;
+    /* float: left; */
     position: relative;
 }
 
 .li_main_menu>p {
-    margin: 0 35px;
+    /* margin: 0 35px; */
     color: white;
 }
 
@@ -122,21 +124,26 @@ body {
 /* WRAPPER */
 
 .wrapper {
-    overflow: hidden;
-    min-height: 500px;
+    display: flex;
+    /* overflow: hidden;
+    min-height: 500px; */
 }
 
 /*SIDEBAR*/
 
 .sidebar {
-    box-sizing: border-box;
+    width: 25%;
+    padding: 15px;
+    border-right: 2px solid #c7cacf;
+    background-color: #edeef0;
+    /* box-sizing: border-box;
     float: left;
     width: 25%;
     padding: 15px;
     border-right: 2px solid #c7cacf;
     background-color: #edeef0;
     margin-bottom: -20000px;
-    padding-bottom: 20000px;
+    padding-bottom: 20000px; */
 }
 
 .sidebar h1 {
@@ -150,14 +157,18 @@ body {
 /*NEWS*/
 
 .news {
-    box-sizing: border-box;
+    width: 25%;
+    padding: 15px;
+    border-left: 2px solid #c7cacf;
+    background-color: #edeef0;
+    /* box-sizing: border-box;
     float: left;
     width: 25%;
     padding: 15px;
     border-left: 2px solid #c7cacf;
     background-color: #edeef0;
     margin-bottom: -20000px;
-    padding-bottom: 20000px;
+    padding-bottom: 20000px; */
 }
 
 .news h1 {
@@ -171,14 +182,18 @@ body {
 /*CONTENT*/
 
 .content {
-box-sizing: border-box;
+    width: 50%;
+    padding: 15px;
+    background-color: white;
+    min-height: 500px;
+/* box-sizing: border-box;
 float: left;
 width: 50%;
 min-height: 1000px;
 padding: 15px;
 background-color: white;
 margin-bottom: -20000px;
-padding-bottom: 20000px;
+padding-bottom: 20000px; */
 }
 
 /* FOOTER */
