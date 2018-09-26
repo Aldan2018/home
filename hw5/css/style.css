@@ -1,0 +1,156 @@
+@font-face {
+    font-family: 'helveticaneue';
+    src: url('../font/helveticaneuecyr-roman-webfont.woff2') format('woff2'),
+         url('../font/helveticaneuecyr-roman-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+    background-image: url(../img/fone.jpg);
+    background-size: cover;
+}
+
+a,
+p,
+span,
+input {
+    font-family: helveticaneue, sans-serif;
+    text-decoration: none;
+}
+
+/* main_menu */
+
+.main_menu {
+    display: flex;
+    justify-content: flex-end;
+    height: 25px;
+    background-color: #074f8d;
+}
+
+.main_menu li {
+    margin-right: 25px;
+    text-align: center;
+}
+
+.main_menu li a {
+    font-size: 12px;
+    line-height: 25px;
+}
+
+.border {
+    border-right: 1px solid #4eabda;
+    padding-right: 15px;
+}
+
+.nograd {
+    width: 70px;
+    height: 25px;
+}
+
+.a_white {
+    width: 135px;
+    height: 25px;
+}
+
+.nograd a {
+    color: #4eabda;
+}
+
+.a_white a {
+    color: white;
+}
+
+.nograd:hover {
+    background-color: #4eabda;
+}
+.nograd:hover a {
+    color: white;
+}
+
+.a_white:hover {
+    background: linear-gradient(to bottom, #4eabda, #2e7ac4);
+}
+/* FORM */
+
+.form {
+    margin: 150px auto;
+    height: 500px;
+    width: 300px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.cadastre_se {
+    border-bottom: 2px solid #d3d6cb;
+}
+.cadastre_se p {
+    color: white;
+    line-height: 40px;
+    text-align: center;
+}
+
+/* input */
+
+.fb {
+    background: url(../img/button/facebook.png);
+    height: 40px;
+    width: 281px;
+    border-radius: 10px;
+}
+
+.in {
+    width: 266px;
+    height: 25px;
+    padding-left: 10px;
+    background-color: black;
+    border-width: 1px;
+    border-color: #494948;
+    color: white;
+}
+
+input::-webkit-input-placeholder {
+    color: white;
+}
+
+.ul_form {
+    margin-left: 10px;
+}
+
+.ul_form li span {
+    color: white;
+    font-size: 13px;
+}
+
+.ul_form li {
+    margin-top: 15px;
+}
+
+.but_create {
+    background: linear-gradient(to top, #2e7ac4, #6bb8e7);
+    color: white;
+    border-radius: 4px;
+    height: 35px;
+    width: 160px;
+    display: block;
+    margin: auto;
+}
+
+.li_text {
+    color: white;
+    font-size: 13px;
+    text-align: center;
+}
+
+.ou span {
+    display: inline-block;
+    width: 119px;
+    vertical-align: middle;
+    color: #666666;
+}
+
+.ou p {
+    margin: 0 8px;
+    display: inline-block;
+    color: #999999;
+}
