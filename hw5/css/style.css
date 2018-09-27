@@ -109,6 +109,13 @@ input {
     color: white;
 }
 
+.in:hover {
+    display: block;
+    background-color: #1b5288;
+    border-color: #1b5288;
+    box-shadow: 0 0 10px #4eabda;
+}
+
 input::-webkit-input-placeholder {
     color: white;
 }
