@@ -1,0 +1,29 @@
+table {
+    margin: 300px;
+}
+
+tr {
+    height: 30px;
+}
+
+td {
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    margin: -2px;
+}
+
+.fox {
+    background-color: coral;
+}
+.yellow {
+    background-color: yellow;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.black {
+    background-color: black;
+}
