@@ -117,7 +117,65 @@ button {
     color: white;
 }
 
-/* top_forms */
+.basket {
+    align-items: center;
+}
+
+.basket img {
+    margin-bottom: 18px;
+    width: 15px;
+}
+
+.basket li {
+    margin-left: 15px;
+    color: #b1bcc0;
+}
+
+#goods,
+#suma {
+    color: #0d5a8f;
+    width: 21px;
+    margin-left: 5px;
+}
+/* top_forms search */
+    /* search for avto */
+
+    .avto {
+    }
+
+    .avto span {
+        margin-left: 6px;
+    }
+
+    .title {
+        display: flex;
+    }
+
+    .mark {
+        display: flex;
+    }
+
+        .big {
+            width: 90px;
+            height: 15px;
+        }
+
+        .small {
+            width: 40px;
+            height: 15px;
+        }
+
+    .model {
+        display: flex;
+    }
+
+    .year {
+        display: flex;
+    }
+
+    .complekt {
+        display: flex;
+    }
 
 
 /* bar */
