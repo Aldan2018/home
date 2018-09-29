@@ -1,0 +1,93 @@
+body {
+    padding: 15px 45px;
+    display: flex;
+    justify-content: center;
+}
+
+/* header */
+
+.contacts {
+    display: inline-flex;
+    align-items: center;
+}
+
+.contacts li {
+    margin-left: 5px;
+}
+
+.contacts span {
+    vertical-align: middle;
+}
+
+.phone_img {
+    height: 21px;
+    width: 21px;
+    background-color: #103f63;
+    border-radius: 15px;
+}
+
+.phone_img img {
+    display: block;
+    margin: auto;
+}
+
+.contacts_blue {
+    display: inline-flex;
+    align-items: center;
+    padding: 3px;
+    height: 21px;
+    background-color: #103f63;
+    border-radius: 5px;
+    box-shadow: 2px 3px 5px #bfbfbf;
+}
+
+.contacts_blue input {
+        border-radius: 2px;
+        border: none;
+}
+.men {
+    width: 21px;
+}
+
+.sub_reg
+input,
+button {
+    background-color: #103f63;
+    color: white;
+    border: none;
+}
+
+.forgot button {
+    background-color: #103f63;
+    color: #bfbfbf;
+    border: none;
+    text-decoration: underline;
+}
+
+.sub_reg input {
+    border-right: 1px solid white;
+}
+
+.home_net_mail {
+    display: inline-flex;
+    padding: 3px;
+    border: 1px solid #bdc3c7;
+    border-radius: 12px;
+}
+
+.home_net_mail li {
+    margin: auto 2px;
+}
+/* top */
+
+
+/* top_forms */
+
+
+/* bar */
+
+
+/* bottom */
+
+
+/* footer */
