@@ -141,42 +141,66 @@ button {
     /* search for avto */
 
     .avto {
+        border: 1px solid black;
+        border-radius: 10px;
+        padding-left: 15px;
+        margin-top: 10px;
+        box-shadow: 2px 2px 5px gray;
     }
 
     .avto span {
-        margin-left: 6px;
+        margin-left: 5px;
     }
 
     .title {
         display: flex;
+        justify-content: space-between;
     }
 
-    .mark {
+    .title span {
+        margin: 2px 15px;
+        color: #154467;
+    }
+
+    .name_search {
         display: flex;
+        flex-direction: row;
     }
 
-        .big {
-            width: 90px;
-            height: 15px;
+    .name {
+
+    }
+
+    .option {
+        display: flex;
+        flex-direction: column;
+        margin: 0 15px;
+    }
+
+    .option select {
+        margin: 3px 0;
+    }
+
+    /* size of select */
+
+    .big {
+        width: 90px;
+    }
+
+    .small {
+        width: 40px;
+    }
+        /* color text in frame */
+
+        .dark {
+            color: black;
+            font-weight: bold;
         }
 
-        .small {
-            width: 40px;
-            height: 15px;
+        .grey {
+            font-weight: bold;
+            color: #9ba5aa;
         }
-
-    .model {
-        display: flex;
-    }
-
-    .year {
-        display: flex;
-    }
-
-    .complekt {
-        display: flex;
-    }
-
 
 /* bar */
 

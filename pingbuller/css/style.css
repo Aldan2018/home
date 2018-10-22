@@ -1,0 +1,209 @@
+@font-face {
+    font-family: 'daymarius';
+    src: url('../fonts/daymarius/12373-webfont.woff2') format('woff2'),
+         url('../fonts/daymarius/12373-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'narrow';
+    src: url('../fonts/fontnarrow/ptn57f-webfont.woff2') format('woff2'),
+         url('../fonts/fontnarrow/ptn57f-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.body {
+    overflow: hidden;
+}
+
+.layout {
+    margin:  auto;
+    max-width: 960px;
+}
+
+.clearfix {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+/* header */
+
+header {
+    background-image: url('../img/bg1.jpg');
+    background-size: cover;
+    height: 840px;
+    overflow: hidden;
+}
+
+    .logo {
+        float: left;
+        margin-top: 6%;
+        margin-bottom: 100px;
+        height: 12%;
+    }
+
+    .nav_li {
+        float: left;
+        margin: 7% -4% 0 13%;
+
+    }
+
+        .nav_li a {
+            font-family: 'daymarius';
+            font-size: large;
+            color: white;
+            text-shadow: 1px 1px 2px grey;
+            text-decoration: none;
+        }
+
+        .nav_li a:hover {
+            border-bottom: 3px solid #EEC1F8;
+        }
+
+/* slider */
+
+.slider {
+    height: 400px;
+    width: 1920px;
+    margin-left: -479px;
+    background-color: rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+    .slider_hiden {
+        width: 960px;
+        overflow: hidden;
+        margin: auto;
+    }
+
+/* slides */
+
+.slidewrapper {
+    width: 5000px;
+    margin-left: -1920px;
+    transition: .5s;
+}
+
+.slide1,
+.slide2,
+.slide3 {
+    padding-top: 10px;
+    float: left;
+    width: 960px;
+}
+
+        .first_line {
+            display: block;
+            font-family: narrow;
+            font-size: 50px;
+            color: white;
+            line-height: 0.6;
+        }
+
+        .second_line {
+            display: block;
+            font-family: daymarius;
+            font-size: 40px;
+            color: #E0C3F3;
+        }
+
+    .slidewrapper p {
+        display: block;
+        width: 450px;
+        color: white;
+        line-height: 2;
+        float: left;
+    }
+
+#foto1,
+#foto2,
+#foto3 {
+    margin-top: -45px;
+    position: absolute;
+}
+
+/* radio button */
+
+#slide1 {
+    position: absolute;
+    top: 420px;
+    left: 880px;
+}
+#slide2 {
+    position: absolute;
+    top: 420px;
+    left: 900px;
+}
+#slide3 {
+    position: absolute;
+    top: 420px;
+    left: 920px;
+}
+
+/* slides checked */
+
+#slide1:checked ~ .slidewrapper > .slide1 > img {
+    position: absolute;
+}
+#slide1:checked ~ .slidewrapper > .slide2 > img {
+    position: inherit;
+}
+#slide1:checked ~ .slidewrapper > .slide3 > img {
+    position: inherit;
+}
+
+#slide2:checked ~ .slidewrapper > .slide1 > img {
+    position: inherit;
+}
+#slide2:checked ~ .slidewrapper > .slide2 > img {
+    position: absolute;
+}
+#slide2:checked ~ .slidewrapper > .slide3 > img {
+    position: inherit;
+}
+
+#slide3:checked ~ .slidewrapper > .slide1 > img {
+    position: inherit;
+}
+#slide3:checked ~ .slidewrapper > .slide2 > img {
+    position: inherit;
+}
+#slide3:checked ~ .slidewrapper > .slide3 > img {
+    position: absolute;
+}
+
+#slide1:checked ~ .slidewrapper {
+    margin-left: 0;
+}
+
+#slide2:checked ~ .slidewrapper {
+    margin-left: -960px;
+}
+#slide3:checked ~ .slidewrapper {
+    margin-left: -1920px;
+}
+
+.info {
+    height: 340px;
+    background: linear-gradient(to top, #342238, #724D80);
+
+}
+
+.content {
+
+}
+
+.bottom {
+
+}
+
+/* footer */
+
+/* footer {
+    background-image: url('../img/bg_footer.jpg');
+    clear: both;
+} */
