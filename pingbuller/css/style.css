@@ -62,6 +62,7 @@ header {
 
         .nav_li a:hover {
             border-bottom: 3px solid #EEC1F8;
+            background-color: rgba(0,0,0,0.2);
         }
 
 /* slider */
@@ -96,12 +97,17 @@ header {
     width: 960px;
 }
 
+/* .slide_text {
+    width: 200px;
+} */
+
         .first_line {
             display: block;
             font-family: narrow;
             font-size: 50px;
             color: white;
             line-height: 0.6;
+            width: 242px;
         }
 
         .second_line {
@@ -109,21 +115,32 @@ header {
             font-family: daymarius;
             font-size: 40px;
             color: #E0C3F3;
+            width: 319px;
         }
 
-    .slidewrapper p {
-        display: block;
-        width: 450px;
-        color: white;
-        line-height: 2;
-        float: left;
-    }
+        .slide_p_hiden {
+            display: block;
+            width: 450px;
+            color: white;
+            line-height: 2;
+            float: left;
+        }
+
+        .slide_p_span {
+            display: block;
+            width: 450px;
+            color: white;
+            line-height: 2;
+            float: left;
+        }
 
 #foto1,
 #foto2,
 #foto3 {
     margin-top: -45px;
     position: absolute;
+    /* top: 0px;
+    left: 1040px; */
 }
 
 /* radio button */
@@ -450,7 +467,7 @@ header {
 }
 
 .adv_pict3 {
-    height: 63px;
+    height: 64px;
     width: 63px;
     background-position: -131px 0px;
 }
@@ -488,7 +505,7 @@ header {
 }
 
 .marginer {
-    margin: 0 60px;
+    margin: 0 6%;
 }
 
 .bottom_li p {
@@ -554,8 +571,137 @@ footer {
     text-shadow: 2px 2px 4px black;
 }
 
-@media (max-width: 768px) {
-    .info {
-        display: none;
+@media (min-width: 481px) and (max-width: 960px) {
+    .layout {
+        max-width: 768px;
+        padding: 0 10px;
         }
+    .info_text {
+        max-height: 190px;
+        overflow: scroll;
+    }
+    .content_slide {
+        max-width: 430px;
+    }
+    .bottom_li {
+        height: 363px;
+        overflow: scroll;
+    }
+
+    #choose2:checked ~ .content_slider_wrapper {
+        margin-left: -430px;
+    }
+
+    #choose3:checked ~ .content_slider_wrapper {
+        margin-left: -860px;
+    }
+
+    #choose4:checked ~ .content_slider_wrapper {
+        margin-left: -1290px;
+    }
+}
+
+@media (min-width:321px) and (max-width: 480px) {
+    .layout {
+        max-width: 480px;
+        padding: 0 10px;
+    }
+    .info {
+        min-height: 350px;
+    }
+    .info_li {
+        float: none;
+        width: 100%;
+    }
+    .info_text {
+        max-height: 33px;
+        overflow: scroll;
+    }
+    .content_slider {
+        float: none;
+        width: 100%;
+    }
+        .content_slide {
+
+        }
+    .content_item {
+        float: none;
+        width: 100%;
+    }
+    .content_ul {
+        padding: 0 0 30px 0;
+    }
+    .adv {
+        width: 77%;
+    }
+    .adv1,
+    .adv2,
+    .adv3,
+    .adv4,
+    .adv5,
+    .adv6 {
+        margin: 5px 25px;
+    }
+    .bottom_li {
+        float: none;
+        width: 100%;
+        padding-top: 20px;
+    }
+    .bottom_li p {
+        height: 40px;
+        overflow: scroll;
+    }
+    .marginer {
+        margin: 0;
+    }
+    footer {
+        padding-top: 6px;
+    }
+    .footer_nav_li {
+        margin-right: 9%;
+    }
+    .footer_nav_li a {
+        font-size: inherit;
+    }
+    .p_footer {
+        width: 190px;
+        margin: 0 145px;
+    }
+    .slide_p_hiden {
+        display: none;
+    }
+    .first_line {
+        font-size: 30px;
+    }
+    .second_line {
+        font-size: 20px;
+    }
+    .slide_p_span {
+        width: 160px;
+    }
+    .logo {
+        float: left;
+        margin: 20px 32%;
+        height: 12%;
+    }
+    .nav {
+        width: 170px;
+        height: 210px;
+        background-color: rgba(67,55,74,0.8);
+        border-radius: 5px;
+        position: absolute;
+        z-index: 200;
+        top: 13%;
+        left: 33%;
+    }
+    .nav_li {
+        float: none;
+        margin: 15px 0px;
+    }
+    .nav_li a {
+        display: block;
+        text-align: center;
+        height: 24px;
+        line-height: 25px;
+    }
 }
