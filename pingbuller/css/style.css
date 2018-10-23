@@ -107,7 +107,7 @@ header {
             font-size: 50px;
             color: white;
             line-height: 0.6;
-            width: 242px;
+            width: 245px;
         }
 
         .second_line {
@@ -495,6 +495,7 @@ header {
 .bottom {
     height: 390px;
     background-color: #ececec;
+    overflow: scroll;
 }
 
 .bottom_li {
