@@ -1,0 +1,103 @@
+/* fonts */
+
+@font-face {
+    font-family: 'narrowregular';
+    src: url('../fonts/fontnarrow/ptn57f-webfont.woff2') format('woff2'),
+         url('../fonts/fontnarrow/ptn57f-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'daymarius';
+    src: url('../fonts/daymarius/12373-webfont.woff2') format('woff2'),
+         url('../fonts/daymarius/12373-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* maked infoBlock */
+
+.infoBlock {
+    height: 350px;
+    background: linear-gradient(to top, #342238, #724D80);
+}
+
+    /* infoBlock__unit */
+
+    .infoBlock__unit {
+
+    }
+
+        /* text styling */
+
+        .infoBlock__headline {
+            font-family: daymarius;
+            color: white
+        }
+
+        .infoBlock__par {
+            font-family: narrowregular;
+            color: white
+        }
+
+        /* image */
+
+        .infoBlock__img_key,
+        .infoBlock__img_cloud,
+        .infoBlock__img_note {
+            margin-top: 10px;
+            width: 27px;
+            height: 25px;
+        }
+
+        .infoBlock__img_key {
+            background-image: url(../img/sprite1.png);
+            background-position: 405px -92px;
+        }
+
+        .infoBlock__img_cloud {
+            background-image: url(../img/sprite1.png);
+            background-position: 376px -67px;
+        }
+
+        .infoBlock__img_note {
+            background-image: url(../img/sprite1.png);
+            background-position: 436px -121px;
+        }
+
+        /* link */
+
+        .infoBlock__link {
+            float: right;
+            color: white;
+            font-family: daymarius;
+            font-size: 2em;
+        }
+
+        .infoBlock__link:hover {
+            text-shadow: 1px 1px white;
+            text-decoration: none;
+            color: white;
+        }
+
+/* @media query */
+
+@media (max-width: 1198px) {
+    .infoBlock__par {
+        height: 185px;
+        overflow: scroll;
+    }
+}
+
+@media (max-width: 990px) {
+    .infoBlock {
+        overflow: scroll;
+    }
+    .infoBlock__par {
+        height: 50px;
+        overflow: scroll;
+    }
+}
