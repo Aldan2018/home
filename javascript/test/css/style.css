@@ -1,0 +1,17 @@
+li {
+    list-style: none;
+}
+
+.wrapper__p {
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+}
+
+.wrapper__form {
+    margin-left: 15px;
+}
+
+.wrapper__button {
+    margin-left: 42%;
+}
