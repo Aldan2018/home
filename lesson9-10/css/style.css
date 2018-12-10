@@ -1,0 +1,238 @@
+body {
+    background-color: #f9f9f9;
+}
+h1 {
+    font-size: 65px;
+    font-family: sans-serif;
+}
+.clearfix {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/*CONTAINER*/
+
+.container {
+    width: 70%;
+    height: 1000px;
+    padding: 20px;
+    margin-left: 13%;
+    border-left: 3px #dcdcdc solid;
+    border-right: 3px #dcdcdc solid;
+    background-color: white;
+}
+
+/*HEAD*/
+
+.logo {
+margin-bottom: 30px;
+height: 50px;
+}
+
+    .logo h1 {
+        width: 300px;
+        float: left;
+    }
+
+    /* select */
+
+    .select {
+        float: right;
+    }
+
+    /* select end */
+
+.main_menu {
+    height: 35px;
+    background-color: #4e4e4e;
+    margin-bottom: 30px;
+}
+.topmenu {
+    display: inline-block;
+    margin-right: 40px;
+    margin-left: 15px;
+}
+
+    .topMenu__ul {
+        position: relative;
+    }
+
+.topmenu :hover {
+    border-left: 1px solid #dcdcdc;
+    border-right: 1px solid #dcdcdc;
+    margin-top: 0;
+    background-color: #393939;
+}
+    .topmenu p {
+        padding: 9px;
+        width: 85px;
+        height: 17px;
+        color: white;
+        font-size: 20px;
+        border-left: 1px solid #4e4e4e;
+        border-right: 1px solid #4e4e4e;
+    }
+
+        .secondMenu {
+            position: absolute;
+            left: 215px;
+            top: 36px;
+            background-color: rgba(0, 0, 0, 0.5);
+            font-size: 18px;
+            color: white;
+            /* visibility: hidden; */
+            display: none;
+        }
+
+        .secondMenu_li {
+            margin: 10px;
+        }
+
+            .thirdMenu {
+                position: absolute;
+                left: 125px;
+                top: 10px;
+                background-color: rgba(0, 0, 0, 0.5);
+
+                box-sizing: border-box;
+                z-index: 999;
+                /* visibility: hidden; */
+                display: none;
+            }
+
+            .thirdMenu_li {
+                padding: 10px;
+            }
+
+/*SIDEBAR*/
+
+.sidebar {
+    float: left;
+}
+.sidebar li {
+    margin-right: 30px;
+    padding: 10px;
+    height: 17px;
+    width: 190px;
+    border: 1px solid #dcdcdc;
+    font-size: 15px;
+    color: #5A5858;
+}
+.sidebar li:hover{
+    width: 180px;
+    background-color: #f9f9f9;
+    color: black;
+    padding-left: 20px;
+}
+
+/*CONTENT*/
+
+.article {
+    height: 300px;
+    width: 580px;
+    float: right;
+}
+
+/* jcarousel */
+
+.jcarousel {
+    position: relative;
+    overflow: hidden;
+    width: 522px;
+    height: 360px;
+    float: right;
+    margin-bottom: 30px;
+    border: 1px solid #dcdcdc;
+}
+
+    .jcarousel ul {
+    width: 10000em;
+    position: relative;
+    }
+
+    .jcarousel li {
+        float: left;
+    }
+
+        .jcarousel-next,
+        .jcarousel-prev {
+            position: absolute;
+            text-decoration: none;
+            font-size: 30px;
+            color: black;
+            text-align: center;
+            background-color: gray;
+            border-radius: 15px;
+            width: 30px;
+            height: 30px;
+
+        }
+            .jcarousel-next {
+                top: 50%;
+                left: 94%;
+            }
+
+            .jcarousel-prev {
+                top: 50%;
+                left: 1%;
+            }
+
+    .jcarousel-pagination {
+        position: absolute;
+        top: 93%;
+        left: 47%;
+
+    }
+
+        .jcarousel-pagination a {
+            display: inline-block;
+            text-indent: -9999px;
+            margin-right: 8px;
+            height: 17px;
+            width: 17px;
+            border: 1px solid white;
+            border-radius:10px;
+            background-color: black;
+            box-shadow: 2px 2px 5px grey;
+        }
+
+        .jcarousel-pagination a.active {
+            background-color: white;
+            border: 1px solid black;
+        }
+
+/* jcarousel end*/
+
+/*FOOTER*/
+
+footer {
+    width: 100%;
+    height: 30px;
+    background-color: #e1e1e1;
+    clear: both;
+}
+footer ul {
+    width: 480px;
+    float: left;
+}
+footer ul li {
+    display: inline-block;
+    margin-right: 40px;
+    margin-left: 15px;
+    padding: 8px;
+    font-size: 14px;
+}
+footer ul :hover {
+    display: inline-block;
+    margin-right: 40px;
+    margin-left: 15px;
+    padding: 8px;
+    font-size: 14px;
+    text-decoration: underline;
+}
+footer span {
+    float: right;
+    font-size: 14px;
+    padding: 10px;
+}

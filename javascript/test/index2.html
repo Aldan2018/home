@@ -8,14 +8,13 @@
     </head>
     <body>
 
-        <button type="button" name="button" id="go">Go!</button>
+        <!-- <button type="button" name="button" id="go">Go!</button> -->
 
-        <script type="text/html" id="printTest">
 
-        </script>
+
 
         <script type="text/javascript" src="js/questionTest.js"></script>
-        <script src="js/test.js"></script>
+        <!-- <script src="js/test.js"></script> -->
 
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
@@ -24,5 +23,26 @@
         <script src="js/tmpl.js"></script>
         <script src="js/script.js"></script>
 
+        <script type="text/html" id="printTest">
+            <h1>Интересный тест</h1>
+            <ul>
+                <% for ( var i=0; i<dat.length; i++ ) { %>
+                    <li>
+                        <%= qu1 %>
+                        <form class="" action="index.html" method="post">
+                            <label style="display: block">
+                                <input type="radio" name="quest" value="varQu1"><%= ddddd %>
+                            </label>
+                            <label style="display: block">
+                                <input type="radio" name="quest" value="varQu1"><%= ddddd %>
+                            </label>
+                            <label style="display: block">
+                                <input type="radio" name="quest" value="varQu1"><%= ddddd %>
+                            </label>
+                        </form>
+                    </li>
+                    <%  }; %>
+                </ul>
+            </script>
     </body>
 </html>

@@ -1,0 +1,119 @@
+
+.clearfix::after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+/* nav */
+    /* passive */
+
+.tab {
+    margin: auto;
+    padding-top: 20px;
+    width: 465px;
+}
+
+    .tab_li {
+        float: left;
+        text-align: center;
+        margin-right: 5px;
+        height: 50px;
+        width: 150px;
+        border: 1px solid black;
+        background-color: gray;
+    }
+
+    .tab_a {
+        line-height: 3em;
+        color: white;
+    }
+
+    /* hover */
+
+.tab_li_hover {
+    background-color: blue;
+}
+
+.tab_li_hover > a {
+    color: white;
+    text-decoration: none;
+}
+
+    /* active */
+
+.tab_li_active {
+    background-color: white;
+}
+
+.tab_li_active > a {
+    color: black;
+    text-decoration: none;
+}
+
+/* article */
+    /* passive */
+
+.article {
+    margin: auto;
+    width: 465px;
+    padding: 5px;
+    display: none;
+}
+
+    /* active */
+
+.article_active {
+    display: block;
+}
+
+/* forms */
+
+.form {
+    position: relative;
+    width: 320px;
+    margin: auto;
+}
+
+    .form__p {
+        margin: 10px auto;
+        line-height: 20px;
+    }
+
+        .input__form {
+            float: right;
+        }
+
+            .tool1,
+            .tool2,
+            .tool3 {
+                position: absolute;
+                width: 220px;
+                height: 29px;
+                background-color: gray;
+                border-radius: 5px;
+                text-align: center;
+                line-height: 2em;
+                display: none;
+            }
+
+            .tool1 {
+                top: -3px;
+                left: 325px;
+            }
+
+            .tool2 {
+                top: 27px;
+                left: 325px;
+            }
+
+            .tool3 {
+                top: 57px;
+                left: 325px;
+            }
+
+            /* On focus */
+
+            .tool_focus {
+                display: block;
+            }

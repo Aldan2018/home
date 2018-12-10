@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style: none;
+}
+.wrapper {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.carousel {
+    position: relative;
+    width: 800px;
+    height: 600px;
+    margin: auto;
+}
+    .opacity-left {
+        position: absolute;
+        width: 600px;
+        height: 100%;
+        margin-left: -600px;
+        background-image: url(../img/gradient_r-l.png);
+    }
+    .opacity-right {
+        position: absolute;
+        width: 600px;
+        height: 100%;
+        margin-left: 800px;
+        background-image: url(../img/gradient_l-r.png);
+    }
+    .left,
+    .right {
+        position: absolute;
+        width: 49px;
+        height: 50px;
+        background-image: url(../img/sprite.png);
+    }
+    .left {
+        top: 50%;
+        left: -59px;
+    }
+    .right {
+        top: 50%;
+        left: 810px;
+        background-position: 49px;
+    }
+.carousel-list {
+    margin-left: -2400px;
+    width: 999999px;
+}
+.carousel-item {
+    float: left;
+}

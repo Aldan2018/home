@@ -16,7 +16,7 @@ var stopwatch = {
     btnClear: function () {
         var self = this;
         var btnClear = document.querySelectorAll('button');
-        btnClear[1].addEventListener('click', () => this.clearTimer.call(this));
+        btnClear[1].addEventListener('click', () => self.clearTimer.call(this));
     },
 
     timer: function (btnStart) {

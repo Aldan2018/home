@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Intertsting test</title>
+        <link rel="stylesheet" href="css/style.css">
+        <!-- connection jquery -->
+        <script
+        src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous">
+        </script>
+        <!-- connection JS -->
+        <script src="js/ask.js"></script>
+        <script src="js/tmpl.js"></script>
+        <script src="js/script.js"></script>
+    </head>
+    <body>
+        <div class="wrapper">
+            <script type="text/html" id="testTmpl">
+                <div class="wrapper_test">
+                <h1>Интересный тест</h1>
+                <ul>
+                    <% for (var i = 0; i < data.length; i++) { %>
+                        <li>
+                            <%= data[i].qu %></br>
+                            <label><input type="radio" name=<%=data[i].className%> value=<%= data[i].answT %>><%= data[i].answT %></label></br>
+                            <label><input type="radio" name=<%=data[i].className%> value=<%= data[i].answF1 %>><%= data[i].answF1 %></label></br>
+                            <label><input type="radio" name=<%=data[i].className%> value=<%= data[i].answF2 %>><%= data[i].answF2 %></label></br>
+                        </li>
+                        <%  }; %>
+                    </ul>
+                </div>
+            </script>
+        </div>
+        <button type="button" name="button" id="check">проверить результат теста</button>
+
+    </body>
+</html>

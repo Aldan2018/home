@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+        <meta charset="utf-8">
+        <title>fitness</title>
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="logo clearfix">
+            <h1>Fitness</h1>
+            <form class="formSelect" action="index.html" method="post">
+                <select class="lineForm select" name="firstSelect" value='Ваш город'>
+                    <option value="kv">Киев</option>
+                    <option value="zp">Запорожье</option>
+                    <option value="dn">Днепр</option>
+                    <option value="kh">Харьков</option>
+                    <option value="lv">Львов</option>
+                    <option value="od">Одесса</option>
+                </select>
+            </form>
+        </header>
+        <nav class="main_menu">
+            <ul class="topMenu__ul">
+                <li class="topmenu"><p>Главная</p></li>
+                <li class="topmenu goods"><p>Товары</p></li>
+                    <ul class="secondMenu">
+                        <li class="secondMenu_li">Велосипеды
+                            <ul class="thirdMenu">
+                                <li class="thirdMenu_li">Украина</li>
+                                <li class="thirdMenu_li">Аист</li>
+                                <li class="thirdMenu_li">Гном</li>
+                                <li class="thirdMenu_li">Спорт</li>
+                                <li class="thirdMenu_li">Турист</li>
+                            </ul>
+                        </li>
+                        <li class="secondMenu_li">Гироборды</li>
+                        <li class="secondMenu_li">Скутеры</li>
+                        <li class="secondMenu_li">Самокаты</li>
+                    </ul>
+                <li class="topmenu"><p>О нас</p></li>
+                <li class="topmenu"><p>Контакты</p></li>
+            </ul>
+        </nav>
+        <div class="sidebar">
+            <ul>
+                <li>Ноутбуки</li>
+                <li>Планшеты</li>
+                <li>Телефоны</li>
+                <li>Телевизоры</li>
+                <li>Бытовая техника</li>
+                <li>Автотовары</li>
+            </ul>
+        </div>
+            <div class="jcarousel">
+                <!-- <img src="img/rover.jpg" alt="Спортивный велосипед"> -->
+                <ul>
+                    <li><img src="img/rover.jpg" alt="Спортивный велосипед"></li>
+                    <li><img src="img/rover1.jpg" alt="Спортивный велосипед"></li>
+                    <li><img src="img/rover2.jpg" alt="Спортивный велосипед"></li>
+                </ul>
+                <a href="#" class="jcarousel-prev"><</a>
+                <a href="#" class="jcarousel-next">></a>
+                <p class="jcarousel-pagination"></p>
+        </div>
+        <article class="article">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </article>
+        <footer>
+            <ul>
+                <li>Главная</li>
+                <li>Товары</li>
+                <li>О нас</li>
+                <li>Контакты</li>
+            </ul>
+            <span>2018 &copy; All right reserved</span>
+        </footer>
+    </div>
+
+    <!-- <script src="js/jquery-1.6.1.js"></script> -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"></script>
+    <script src="js/jquery.jcarousel.js"></script>
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>
