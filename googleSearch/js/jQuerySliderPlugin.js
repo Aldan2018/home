@@ -23,7 +23,7 @@
 
       var marginLeftValue = parseInt(carousel.css('margin-left'));
 
-      var autoMove = setInterval(slideMover, 10000);
+      var autoMove = setInterval(slideMover, 3000);
       function slideMover() {
           if(marginLeftValue != minMargin) {
           marginLeftValue -= widthImg;

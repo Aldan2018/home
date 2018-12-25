@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Мой первый поисковик</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+
+    <div class="wrapper">
+      <!-- <form class="" action="index.html" method="post"> -->
+        <input class="wrapper_input" type="text" name="" value="">
+        <button class="wrapper_button" type="button" name="button">Найти</button>
+      <!-- </form> -->
+    </div>
+
+    <div class="wrapperCarousel">
+        <script type="text/html" id="slider">
+              <div class="carousel">
+                  <div class="opacity-left"></div>
+                  <div class="opacity-right"></div>
+                  <div class="right"></div>
+                  <div class="left"></div>
+                  <ul class="carousel-list">
+                    <% for(var i = 1; i < data.length; i++) {%>
+                      <li class="carousel-item">
+                          <a href="#"><img src='<%=data[i].largeImageURL%>' alt=""></a>
+                      </li>
+                    <% } %>
+                  </ul>
+              </div>
+          </script>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/template.js"></script>
+    <script type="text/javascript" src="js/jQuerySliderPlugin.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

@@ -3,6 +3,8 @@
     <head>
         <meta charset="utf-8">
         <title>Intertsting test</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script> -->
         <link rel="stylesheet" href="css/style.css">
         <!-- connection jquery -->
         <script
@@ -18,22 +20,44 @@
     <body>
         <div class="wrapper">
             <script type="text/html" id="testTmpl">
-                <div class="wrapper_test">
+              <div class="wrapper_test">
+                <button class="btn btn-outline-secondary" type="button" name="button" id="addQuestion">+</button>
                 <h1>Интересный тест</h1>
                 <ul>
                     <% for (var i = 0; i < data.length; i++) { %>
                         <li>
                             <%= data[i].qu %></br>
-                            <label><input type="radio" name=<%=data[i].className%> value=<%= data[i].answT %>><%= data[i].answT %></label></br>
-                            <label><input type="radio" name=<%=data[i].className%> value=<%= data[i].answF1 %>><%= data[i].answF1 %></label></br>
-                            <label><input type="radio" name=<%=data[i].className%> value=<%= data[i].answF2 %>><%= data[i].answF2 %></label></br>
+                            <label><input type="radio" name='answer<%=i%>' value=<%= data[i].answ0 %> num = 0 ><%= data[i].answ0 %></label></br>
+                            <label><input type="radio" name='answer<%=i%>' value=<%= data[i].answ1 %> num = 1><%= data[i].answ1 %></label></br>
+                            <label><input type="radio" name='answer<%=i%>' value=<%= data[i].answ2 %> num = 2><%= data[i].answ2 %></label></br>
                         </li>
                         <%  }; %>
-                    </ul>
-                </div>
+                </ul>
+                <button class="btn btn-outline-secondary" type="button" name="button" id="check">проверить результат теста</button>
+              </div>
             </script>
         </div>
-        <button type="button" name="button" id="check">проверить результат теста</button>
-
+        <!-- <div class="modalBgrnd">
+          <div class="modalWin">
+            <p class="modalHeader">Добавьте вопрос, варианты ответа и не забудьте отметить правильный</p>
+            <input type="text" name="" value placeholder ="Запишите свой вопрос" class="inputQuestion">
+            <label>
+              <input class="answerRadio" type="radio" name="ans" value="" accord="recipient1">
+                <input type="text" name="" value placeholder ="Запишите сюда первый ответ" class="answerText" accord='sender1'></input>
+              </input>
+            </label>
+            <label>
+              <input class="answerRadio" type="radio" name="ans" value="">
+              <input type="text" name="" value placeholder ="Запишите сюда второй ответ" class="answerText"></input></label>
+              </input>
+            <label>
+              <input class="answerRadio" type="radio" name="ans" value="">
+              <input type="text" name="" value placeholder ="Запишите сюда третий ответ" class="answerText"></input>
+              </input>
+            </label>
+              <button class="insert btn btn-outline-success" type="button" name="button">Добавить вопрос</button>
+              <button class="cancel btn btn-outline-danger" type="button" name="button">Отменить</button>
+          </div>
+        </div> -->
     </body>
 </html>
