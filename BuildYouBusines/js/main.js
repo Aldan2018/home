@@ -52,7 +52,7 @@ $(function () {
     content.toggleClass("adv__content_text-visible");
     var removeBlock = $('.adv__content_text' + (number+1)).siblings().last().detach();
 
-    event.stopPropagation();
+    e.stopPropagation();
 
   $('body').click(function () {
     content.removeClass('adv__content_text-visible');

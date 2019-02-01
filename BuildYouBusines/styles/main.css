@@ -105,7 +105,7 @@ table {
 }
 
 .social__mail:hover {
-  background-position: 0 37px;
+  background-position: 0 419px;
 }
 
 .social__fb {
@@ -113,7 +113,7 @@ table {
 }
 
 .social__fb:hover {
-  background-position: -35px 37px;
+  background-position: -35px 419px;
 }
 
 .social__skype {
@@ -121,7 +121,7 @@ table {
 }
 
 .social__skype:hover {
-  background-position: -70px 37px;
+  background-position: -70px 419px;
 }
 
 .social__twitter {
@@ -129,7 +129,7 @@ table {
 }
 
 .social__twitter:hover {
-  background-position: -105px 37px;
+  background-position: -105px 419px;
 }
 
 .social__in {
@@ -137,7 +137,7 @@ table {
 }
 
 .social__in:hover {
-  background-position: -140px 37px;
+  background-position: -140px 419px;
 }
 
 .main-nav {
@@ -293,7 +293,7 @@ table {
 .adv__content_text1,
 .adv__content_text2,
 .adv__content_text3 {
-  height: 45px;
+  height: 47px;
   margin-top: 10px;
   overflow: hidden;
   text-align: justify;
