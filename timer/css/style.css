@@ -3,14 +3,46 @@
     padding: 0;
 }
 
+/* background */
+
+body {
+  background-color: transparent;
+}
+
+html {
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#3570b4, endColorstr=#bfd9f0)";
+  /* IE 8-9 */
+  background: -webkit-linear-gradient(#3570b4, #bfd9f0);
+  /* Safari 5.1, iOS 5.0-6.1, Chrome 10-25, Android 4.0-4.3 */
+  background: -moz-linear-gradient(#3570b4, #bfd9f0);
+  /* Firefox 3.6-15 */
+  background: -o-linear-gradient(#3570b4, #bfd9f0);
+  /* Opera 11.1-12 */
+  background: linear-gradient(#3570b4, #bfd9f0);
+  /* Opera 15+, Chrome 25+, IE 10+, Firefox 16+, Safari 6.1+, iOS 7+, Android 4.4+ */
+  height: -webkit-fill-available;
+}
+
+.big_sky {
+  position: absolute;
+  width: 100%;
+  left: 0;
+}
+
+.small_sky {
+  position: absolute;
+  width: 100%;
+  left: 0;
+}
+
 /* stopwatch */
 
 .stopwatch {
     width: 1200px;
     height: 300px;
-    background-color: gray;
     margin: 100px 0px;
     border-radius: 30px;
+    z-index: 9;
 }
 
     .hh-mm-ss {
@@ -30,4 +62,5 @@
     width: 300px;
     height: 150px;
     font-size: 3rem;
+    z-index: 9;
 }
